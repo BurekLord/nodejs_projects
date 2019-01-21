@@ -6,6 +6,7 @@ const bodyParser = require('body-parser');
 const app = express();
 
 // body parser za express
+// sve sto mi treba da nije direktno u expressu izgleda se dodaje u app.use()...
 app.use(bodyParser.urlencoded({extended: false}));
 
 // // koristim app.use() metodu da handlujem request respons i use() mora da bude deklarisan pre http.createServer(app)
